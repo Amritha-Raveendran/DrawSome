@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrawSome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="background-container">
+        <div id="bg-blur">
+            <nav class="navbar navbar-expand-lg bg-custom shadow-sm fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://img.freepik.com/premium-vector/writing-color-pencil-logo-vector-template-design_741965-267.jpg" alt="Logo" style="height: 50px;" class="rounded-circle">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#contact">CONTACT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-bold" href="#courses" role="button" data-bs-toggle="dropdown" aria-expanded="false">COURSES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Realistic Portrait</a></li>
+                                    <li><a class="dropdown-item" href="#">Caricature Art</a></li>
+                                    <li><a class="dropdown-item" href="#">Scribble Art</a></li>
+                                    <li><a class="dropdown-item" href="#">Painting</a></li>
+                                    <li><a class="dropdown-item" href="#">Certificate Course in Painting</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-primary rounded-pill px-3 py-2 mb-2 mb-sm-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Icons -->
+                    <div class="d-none d-lg-flex">
+                        <i class="fa-brands fa-facebook-f text-primary mx-2 fa-lg" aria-hidden="true"></i>
+                        <i class="fa-brands fa-instagram text-danger mx-2 fa-lg" aria-hidden="true"></i>
+                        <i class="fa-brands fa-twitter text-info mx-2 fa-lg" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Welcome Section -->
+            <div id="welcome" class="text-center text-white py-5">
+                <h1 class="fs-1">WELCOME</h1>
+                <p class="fs-2">We've got your <span style="color: greenyellow;">curriculum !</span></p>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- home -->
+    <div id="home" style="background-color: rgb(23, 29, 59);">
+        <div class="container">
+            <div id="home" style="background-color: rgb(23, 29, 59);">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                            <h2 class="text-white text-center text-md-start mt-5">Know more about us !!</h2>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-3">
+                                <i class="fa-solid fa-check" style="color: #25bb07;"></i>
+                                <span class="ms-2 text-white">World-renowned authors & educators</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-3">
+                                <i class="fa-solid fa-check" style="color: #25bb07;"></i>
+                                <span class="ms-2 text-white">500+ lessons organized by topic</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-3">
+                                <i class="fa-solid fa-check" style="color: #25bb07;"></i>
+                                <span class="ms-2 text-white">Downloadable & printable</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-3">
+                                <i class="fa-solid fa-check" style="color: #25bb07;"></i>
+                                <span class="ms-2 text-white">Reading ease & grade level ratings</span>
+                            </div>
+                        </div>
+        
+                        <!--Image -->
+                        <div class="col-md-6 text-center">
+                            <img src="https://i.pinimg.com/474x/33/d1/80/33d18069c1e4b83a8904e038edcae0f6.jpg" alt="no image" class="w-100 rounded mb-5 mt-5" style="max-height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about" style="background-color: rgb(255, 192, 114);">
+        <div class="container">
+            <div id="home" style="background-color: rgb(255, 192, 114);">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Image -->
+                        <div class="col-md-6 text-center">
+                            <img src="https://i.ytimg.com/vi/n8ViRR22FwU/maxresdefault.jpg" alt="no image" class="w-100 rounded mb-4 mt-5" style="max-height: 400px; object-fit: cover;">
+                        </div>
+            
+                        <!-- Text content -->
+                        <div class="col-md-6 text-center text-justify-content align-items-center text-md-start mb-4 mb-md-0 mt-4 p-5 ">
+                            <h5 class="text-primary text-center">"USED IN THOUSANDS OF CLASSROOMS"</h5>
+                            <h2 class="text-dark text-center t">Focus on your students</h2>
+                            <p class="text-dark text-center text-justify">Whether you're a homeschooler, a high school art teacher, or a college instructor, you probably don't have a lot of time on your hands. And like most educators, you'd likely rather spend less energy creating art lessons from scratch, and more energy teaching, guiding, and supporting your students.</p>
+        
+                            <p class="text-dark text-center text-justify">That's where we come in. Co-founded in 2001 by Brenda Hoddinott, author of Drawing for Dummies, Drawspace has teamed up with celebrated art educators from around the world. The result? More than 500 art lessons designed for learners of all ages and experience levels, and formatted with classroom environments in mind. Used in thousands of classrooms for almost two decades, Drawspace lessons make a trusted and convenient addition to every curriculum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- courses -->
+    <div id="courses" class="container my-5">
+        <div class="container my-5" id="courses">
+            <div class="row justify-content-center">
+                <h1 class="mb-4 text-center" style="color: brown;">COURSES</h1>
+                <div class="mb-3" style="height: 5px; background-color: lightblue;"></div>
+    
+                <div class="col-md-6 mb-3">
+                    <div class="card shadow-lg border-0">
+                        <!-- Video -->
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JuhPAcWpunc?si=8_cHCd6Pw8FuFAPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Realistic Drawing</h5>
+                            <p class="card-text text-justify">
+                                Explore this engaging video that dives into new concepts and helps you master the skills you're passionate about. Learning has never been this fun and interactive!
+                            </p>
+                            <!-- Button -->
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary px-4 py-2">
+                                    Learn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 mb-3">
+                    <div class="card shadow-lg border-0">
+                        <!-- Video -->
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pEq6BfEY0ak?si=NI4tDCDz60wQExM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Painting</h5>
+                            <p class="card-text text-justify">
+                                Explore this engaging video that dives into new concepts and helps you master the skills you're passionate about. Learning has never been this fun and interactive!
+                            </p>
+                            <!-- Button -->
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary px-4 py-2">
+                                    Learn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 mb-3">
+                    <div class="card shadow-lg border-0">
+                        <!-- Video -->
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9wQoCCcADjg?si=11IIvt_Gc5_VbKji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Caricature art</h5>
+                            <p class="card-text text-justify">
+                                Explore this engaging video that dives into new concepts and helps you master the skills you're passionate about. Learning has never been this fun and interactive!
+                            </p>
+                            <!-- Button -->
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary px-4 py-2">
+                                    Learn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 mb-3">
+                    <div class="card shadow-lg border-0">
+                        <!-- Video -->
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Grpd4UFBFdo?si=dAtpo9IxJtTWYMv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Scribble</h5>
+                            <p class="card-text text-justify">
+                                Explore this engaging video that dives into new concepts and helps you master the skills you're passionate about. Learning has never been this fun and interactive!
+                            </p>
+                            <!-- Button -->
+                            <div class="text-center">
+                                <a href="" class="btn btn-primary px-4 py-2">
+                                    Learn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="mb-1" style="height: 5px; background-color: lightblue;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="container contact-section">
+        <div class="row">
+            <div class="contact-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mb-4">
+                            <h2 id="contact">Contact Us</h2>
+                            <p>We'd love to hear from you! Please fill out the form below or reach us through our contact information.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-contact w-100">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center mt-4 mt-md-0">
+                            <div class="contact-info ms-md-5"> 
+                                <h5>Reach Us At</h5>
+                                <p><i class="fas fa-map-marker-alt me-2"></i>123 Street, City, Country</p>
+                                <p><i class="fas fa-phone-alt me-2"></i>+1 234 567 890</p>
+                                <p><i class="fas fa-envelope me-2"></i>info@example.com</p>
+                                <h5>Follow Us</h5>
+                                <div class="social-icons">
+                                    <a href="#" class="text-primary"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-danger"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-info"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer-section" class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p> &copy; 2024 DrawSome | All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
